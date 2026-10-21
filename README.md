@@ -1,124 +1,120 @@
-# ETL de Dados Hospitalares — IAM
+# ETL de Dados Hospitalares
 
-Projeto demonstrativo em Python para leitura, padronização e consolidação de planilhas Excel no contexto de infarto agudo do miocárdio (IAM).
+Projeto de portfólio em Python para padronização de planilhas, consolidação de registros e geração de relatórios de qualidade de dados.
 
-**Todos os dados de exemplo são inteiramente sintéticos. O projeto não utiliza dados pessoais, informações de pacientes ou código institucional restrito.**
+Os módulos demonstram processos de IAM, AVC e preços unitários de medicamentos. **Todos os exemplos são sintéticos. Não há dados de pacientes nem código institucional restrito.**
 
-## Objetivo
+## Módulos
 
-Demonstrar um processo de ETL — extração, transformação e carga — que reúne arquivos com cabeçalhos diferentes em uma base padronizada.
+| Módulo | Entrada | Resultado |
+| --- | --- | --- |
+| IAM | `dados/entrada/*.xlsx` | Base padronizada com arquivo de origem |
+| AVC | `dados/entrada_avc/*.xlsx` | Base, origem de cada linha, possíveis duplicidades e pendências |
+| Medicamentos | `dados/entrada_medicamentos/*.xlsx` | Preços por ano/mês, rastreabilidade e pendências |
 
-## Funcionalidades
-
-- Leitura de arquivos `.xlsx` na pasta `dados/entrada`.
-- Normalização dos cabeçalhos, removendo acentos e espaços excedentes.
-- Mapeamento de nomes alternativos, como `Hospital` e `Unidade de Saúde`, para `UNIDADE`.
-- Conversão de datas e campos numéricos.
-- Inclusão de colunas ausentes.
-- Identificação do arquivo de origem de cada registro.
-- Exportação dos dados consolidados para Excel.
-- Execução manual pelo GitHub Actions.
-
-## Tecnologias
-
-- Python
-- pandas
-- openpyxl
-- GitHub Actions
-
-## Estrutura
-
-```text
-etl-dados-hospitalares/
-├── .github/
-│   └── workflows/
-│       └── etl-demo.yml
-├── dados/
-│   ├── entrada/
-│   │   ├── iam_sintetico_alfa.xlsx
-│   │   └── iam_sintetico_beta.xlsx
-│   └── saida/
-│       └── consolidado_iam_demo.xlsx
-├── src/
-│   └── etl_iam.py
-├── requirements.txt
-└── README.md
-```
-
-## Dados de exemplo
-
-As duas planilhas contêm 10 atendimentos fictícios cada, com cabeçalhos diferentes para testar a padronização.
-
-| Campo final | Descrição |
-| --- | --- |
-| UNIDADE | Unidade fictícia |
-| REGIAO | Região fictícia |
-| DATA | Data do atendimento fictício |
-| FAIXA_ETARIA | Faixa etária em anos |
-| SEXO | Categoria sintética M/F |
-| TEMPO_PORTA_ECG | Tempo sintético em minutos |
-| TEMPO_ECG_AGULHA | Tempo sintético em minutos |
-| ARQUIVO_ORIGEM | Nome da planilha de entrada |
-
-Os valores servem apenas para testar o software e não representam indicadores clínicos reais.
-
-## Executar no GitHub
-
-1. Abra a aba **Actions**.
-2. Selecione **ETL demonstrativo**.
-3. Clique em **Run workflow** e confirme.
-4. Aguarde a conclusão com a marca verde.
-5. Abra o resumo da execução.
-6. Em **Artifacts**, baixe **consolidado-iam-demo**.
-7. Extraia o ZIP e abra a planilha gerada.
-
-O resultado fica disponível para download na execução. O fluxo não faz commit automático da saída no repositório.
+Tecnologias: Python 3.12, pandas, openpyxl, unittest e GitHub Actions.
 
 ## Executar localmente
 
-Com Python 3.12 instalado, baixe o repositório, extraia os arquivos e abra um terminal na pasta principal.
-
-Instale as dependências:
+Abra o terminal na raiz do projeto e execute:
 
 ```sh
 python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python src/etl_iam.py
+python src/etl_avc.py
+python src/etl_medicamentos.py
 ```
 
-Execute o pipeline:
+No Windows, use `py` em lugar de `python` se necessário.
+
+Os resultados ficam em `dados/saida/`. Uma nova execução substitui os respectivos arquivos de saída. Não coloque os consolidados nas pastas de entrada.
+
+## Executar no GitHub
+
+O arquivo `.github/workflows/etl-completo.yml` executa os testes e os três módulos. Após salvar os arquivos na branch padrão:
+
+1. Abra **Actions → ETL completo**.
+2. Clique em **Run workflow** e confirme.
+3. Aguarde a conclusão.
+4. Abra o resumo e baixe **resultados-etl** na seção **Artifacts**.
+
+Os arquivos são disponibilizados para download. O workflow não faz commit automático dos resultados. Também é executado em pushes e pull requests.
+
+## Formato das entradas de AVC
+
+A primeira linha deve conter cabeçalhos e os dados devem estar na primeira aba. Cada linha é um atendimento fictício. Tempos em minutos, datas em dia/mês/ano ou como datas do Excel e faixa etária em anos.
+
+| Coluna final | Cabeçalhos alternativos |
+| --- | --- |
+| UNIDADE | Hospital; Unidade de Saúde |
+| DATA | Data Atendimento |
+| FAIXA_ETARIA | Idade Grupo |
+| TEMPO_PORTA_TOMOGRAFIA | Porta Tomografia |
+| TEMPO_PORTA_AGULHA | Porta Agulha |
+
+O mapeamento ignora acentos, caixa e espaços excedentes nos cabeçalhos. Cabeçalhos duplicados após mapeamento interrompem o processamento.
+
+O arquivo `consolidado_avc_demo.xlsx` contém:
+
+- **Base:** todos os registros, `ARQUIVO_ORIGEM`, `LINHA_ORIGEM` e `POSSIVEL_DUPLICATA`.
+- **Pendencias:** arquivo, número da linha no Excel de origem e motivos para revisão.
+
+São sinalizados campos obrigatórios ausentes, datas inválidas, tempos ausentes, inválidos, negativos ou não finitos e porta-agulha inferior a porta-tomografia. Esta última regra é uma verificação demonstrativa de cronologia, não um protocolo clínico. Nenhum limite clínico foi estabelecido.
+
+Possíveis duplicidades são coincidências de unidade, data e faixa etária, com normalização de texto e apenas chaves completas. Pessoas distintas podem compartilhar esses atributos. **O sinalizador não comprova duplicidade e não exclui registros.**
+
+## Formato das entradas de medicamentos
+
+O nome do arquivo precisa conter exatamente um ano entre 2000 e 2099, como `valores_sinteticos_2026.xlsx`. Todas as abas são lidas, sem cabeçalho fixo. A primeira coluna contém os meses por extenso.
+
+O layout posicional demonstrativo é:
+
+| Seção identificada pelo título | Coluna Excel | Preço unitário em BRL |
+| --- | --- | --- |
+| IAM / Infarto Agudo do Miocárdio / Tenecteplase | D | TENECTEPLASE 40 mg |
+| IAM | H | TENECTEPLASE 50 mg |
+| AVC / Acidente Vascular Cerebral / Alteplase | D | ALTEPLASE 10 mg |
+| AVC | G | ALTEPLASE 20 mg |
+| AVC | J | ALTEPLASE 50 mg |
+
+O título da seção deve estar em uma linha anterior aos meses. Uma linha TOTAL não encerra a leitura. Linhas com títulos das duas seções simultaneamente suspendem a identificação até o próximo título inequívoco. Os arquivos de exemplo demonstram esse layout.
+
+O arquivo `dValoresDosagem.xlsx` contém:
+
+- **Valores:** uma linha por ano/mês encontrado e cinco preços unitários.
+- **Origens:** arquivo, aba e linha dos valores aceitos.
+- **Pendencias:** valores vazios, inválidos, negativos ou campos sem seção correspondente em um mês encontrado.
+
+Aceita números e textos monetários brasileiros, como `R$ 1.234,56`. Valores inválidos ficam em branco, sem substituição por zero. Zero é preservado. Repetições de ano/mês/medicamento interrompem o processamento, mesmo quando o primeiro valor é inválido. Não são somados preços, não é calculado consumo e não há escolha automática entre preços repetidos.
+
+## Exemplos e resultados esperados
+
+| Conjunto sintético | Resultado esperado |
+| --- | --- |
+| IAM: 2 arquivos | 20 registros |
+| AVC: 2 arquivos | 8 registros; 7 registros com pendências; 2 possíveis duplicatas |
+| Medicamentos: 2 arquivos | 6 meses, janeiro a março de 2025 e 2026; 28 valores aceitos; 2 pendências |
+
+As entradas de AVC e medicamentos incluem erros deliberados para demonstrar a revisão de qualidade. Pendências não impedem a exportação quando existem dados processáveis. Erros estruturais, como cabeçalhos duplicados ou preços repetidos, interrompem a execução.
+
+## Testes automatizados
 
 ```sh
-python src/etl_iam.py
+python -m unittest discover -s tests -v
 ```
 
-No Windows, caso `python` não seja reconhecido, utilize `py`.
+A suíte cobre aliases, campos ausentes, cabeçalhos duplicados, conversão de datas e preços, tempos negativos, cronologia, origem das pendências, duplicidades, ano ausente, pasta vazia e leitura dos resultados exportados. Veja `VALIDACAO.md` para os resultados da execução local.
 
-A saída será salva em:
+## Limitações
 
-```text
-dados/saida/consolidado_iam_demo.xlsx
-```
+- IAM e AVC leem somente a primeira aba.
+- O IAM mantém a lógica demonstrativa já validada, sem relatório de pendências.
+- O layout de medicamentos depende das posições documentadas; mudanças na estrutura exigem ajuste do mapeamento.
+- Os meses completamente ausentes de todas as entradas não são criados nem sinalizados.
+- As verificações tratam qualidade de dados e não fornecem recomendações clínicas ou financeiras.
+- Entradas originais são preservadas. Datas e números inválidos podem aparecer vazios na base exportada; as pendências apontam a origem para conferência.
 
-## Resultado validado
+## Segurança e privacidade
 
-O pipeline foi executado localmente e pelo GitHub Actions. Com as duas entradas de exemplo, o resultado contém:
-
-- 20 registros consolidados.
-- 8 colunas padronizadas.
-- Identificação da origem de cada registro.
-
-Na validação local, datas, tempos e demais valores foram comparados com os dados sintéticos esperados.
-
-## Comportamento e limitações
-
-- Apenas a primeira aba de cada arquivo é lida.
-- Datas e números inválidos são convertidos em valores ausentes.
-- Colunas esperadas que não existem na entrada são preenchidas com valores ausentes.
-- Colunas extras são descartadas.
-- Cabeçalhos que resultam na mesma coluna após o mapeamento geram erro.
-- Registros duplicados não são removidos automaticamente.
-- Não há validação de regras clínicas ou faixas de valores.
-- Uma nova execução substitui o arquivo consolidado no ambiente de execução.
-
-## Uso dos exemplos
-
-Mantenha somente planilhas sintéticas em `dados/entrada`. Preserve os cabeçalhos na primeira linha e mantenha os arquivos consolidados fora dessa pasta.
+Este repositório foi preparado para uso com dados inteiramente sintéticos. Não envie nomes, prontuários, documentos, dados reais de pacientes ou código de sistemas institucionais.
