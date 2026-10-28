@@ -1,0 +1,922 @@
+{
+  "titulo": "Roteiro Objetivo de Inspeção: Demonstração Sintética",
+  "documento": "DEMO",
+  "versao": "1.0",
+  "indicadores": [
+    {
+      "ID": 1,
+      "INDICADOR": "Indicador demonstrativo 01",
+      "CRITICIDADE": "NC"
+    },
+    {
+      "ID": 2,
+      "INDICADOR": "Indicador demonstrativo 02",
+      "CRITICIDADE": "NC"
+    },
+    {
+      "ID": 3,
+      "INDICADOR": "Indicador demonstrativo 03",
+      "CRITICIDADE": "NC"
+    },
+    {
+      "ID": 4,
+      "INDICADOR": "Indicador demonstrativo 04",
+      "CRITICIDADE": "NC"
+    },
+    {
+      "ID": 5,
+      "INDICADOR": "Indicador demonstrativo 05",
+      "CRITICIDADE": "NC"
+    },
+    {
+      "ID": 6,
+      "INDICADOR": "Indicador demonstrativo 06",
+      "CRITICIDADE": "C"
+    },
+    {
+      "ID": 7,
+      "INDICADOR": "Indicador demonstrativo 07",
+      "CRITICIDADE": "C"
+    },
+    {
+      "ID": 8,
+      "INDICADOR": "Indicador demonstrativo 08",
+      "CRITICIDADE": "C"
+    },
+    {
+      "ID": 9,
+      "INDICADOR": "Indicador demonstrativo 09",
+      "CRITICIDADE": "C"
+    },
+    {
+      "ID": 10,
+      "INDICADOR": "Indicador demonstrativo 10",
+      "CRITICIDADE": "NC"
+    },
+    {
+      "ID": 11,
+      "INDICADOR": "Indicador demonstrativo 11",
+      "CRITICIDADE": "C"
+    },
+    {
+      "ID": 12,
+      "INDICADOR": "Indicador demonstrativo 12",
+      "CRITICIDADE": "C"
+    },
+    {
+      "ID": 13,
+      "INDICADOR": "Indicador demonstrativo 13",
+      "CRITICIDADE": "C"
+    },
+    {
+      "ID": 14,
+      "INDICADOR": "Indicador demonstrativo 14",
+      "CRITICIDADE": "C"
+    },
+    {
+      "ID": 15,
+      "INDICADOR": "Indicador demonstrativo 15",
+      "CRITICIDADE": "C"
+    },
+    {
+      "ID": 16,
+      "INDICADOR": "Indicador demonstrativo 16",
+      "CRITICIDADE": "C"
+    },
+    {
+      "ID": 17,
+      "INDICADOR": "Indicador demonstrativo 17",
+      "CRITICIDADE": "NC"
+    },
+    {
+      "ID": 18,
+      "INDICADOR": "Indicador demonstrativo 18",
+      "CRITICIDADE": "C"
+    },
+    {
+      "ID": 19,
+      "INDICADOR": "Indicador demonstrativo 19",
+      "CRITICIDADE": "C"
+    },
+    {
+      "ID": 20,
+      "INDICADOR": "Indicador demonstrativo 20",
+      "CRITICIDADE": "NC"
+    }
+  ],
+  "criterios": [
+    {
+      "ID_INDICADOR": 1,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 01, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "1-0"
+    },
+    {
+      "ID_INDICADOR": 1,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 01, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "1-1"
+    },
+    {
+      "ID_INDICADOR": 1,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 01, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "1-2"
+    },
+    {
+      "ID_INDICADOR": 1,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 01, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "1-3"
+    },
+    {
+      "ID_INDICADOR": 1,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 01, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "1-4"
+    },
+    {
+      "ID_INDICADOR": 1,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 01, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "1-5"
+    },
+    {
+      "ID_INDICADOR": 2,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 02, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "2-0"
+    },
+    {
+      "ID_INDICADOR": 2,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 02, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "2-1"
+    },
+    {
+      "ID_INDICADOR": 2,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 02, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "2-2"
+    },
+    {
+      "ID_INDICADOR": 2,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 02, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "2-3"
+    },
+    {
+      "ID_INDICADOR": 2,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 02, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "2-4"
+    },
+    {
+      "ID_INDICADOR": 2,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 02, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "2-5"
+    },
+    {
+      "ID_INDICADOR": 3,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 03, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "3-0"
+    },
+    {
+      "ID_INDICADOR": 3,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 03, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "3-1"
+    },
+    {
+      "ID_INDICADOR": 3,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 03, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "3-2"
+    },
+    {
+      "ID_INDICADOR": 3,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 03, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "3-3"
+    },
+    {
+      "ID_INDICADOR": 3,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 03, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "3-4"
+    },
+    {
+      "ID_INDICADOR": 3,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 03, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "3-5"
+    },
+    {
+      "ID_INDICADOR": 4,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 04, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "4-0"
+    },
+    {
+      "ID_INDICADOR": 4,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 04, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "4-1"
+    },
+    {
+      "ID_INDICADOR": 4,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 04, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "4-2"
+    },
+    {
+      "ID_INDICADOR": 4,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 04, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "4-3"
+    },
+    {
+      "ID_INDICADOR": 4,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 04, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "4-4"
+    },
+    {
+      "ID_INDICADOR": 4,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 04, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "4-5"
+    },
+    {
+      "ID_INDICADOR": 5,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 05, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "5-0"
+    },
+    {
+      "ID_INDICADOR": 5,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 05, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "5-1"
+    },
+    {
+      "ID_INDICADOR": 5,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 05, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "5-2"
+    },
+    {
+      "ID_INDICADOR": 5,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 05, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "5-3"
+    },
+    {
+      "ID_INDICADOR": 5,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 05, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "5-4"
+    },
+    {
+      "ID_INDICADOR": 5,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 05, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "5-5"
+    },
+    {
+      "ID_INDICADOR": 6,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 06, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "6-0"
+    },
+    {
+      "ID_INDICADOR": 6,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 06, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "6-1"
+    },
+    {
+      "ID_INDICADOR": 6,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 06, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "6-2"
+    },
+    {
+      "ID_INDICADOR": 6,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 06, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "6-3"
+    },
+    {
+      "ID_INDICADOR": 6,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 06, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "6-4"
+    },
+    {
+      "ID_INDICADOR": 6,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 06, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "6-5"
+    },
+    {
+      "ID_INDICADOR": 7,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 07, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "7-0"
+    },
+    {
+      "ID_INDICADOR": 7,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 07, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "7-1"
+    },
+    {
+      "ID_INDICADOR": 7,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 07, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "7-2"
+    },
+    {
+      "ID_INDICADOR": 7,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 07, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "7-3"
+    },
+    {
+      "ID_INDICADOR": 7,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 07, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "7-4"
+    },
+    {
+      "ID_INDICADOR": 7,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 07, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "7-5"
+    },
+    {
+      "ID_INDICADOR": 8,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 08, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "8-0"
+    },
+    {
+      "ID_INDICADOR": 8,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 08, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "8-1"
+    },
+    {
+      "ID_INDICADOR": 8,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 08, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "8-2"
+    },
+    {
+      "ID_INDICADOR": 8,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 08, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "8-3"
+    },
+    {
+      "ID_INDICADOR": 8,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 08, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "8-4"
+    },
+    {
+      "ID_INDICADOR": 8,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 08, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "8-5"
+    },
+    {
+      "ID_INDICADOR": 9,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 09, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "9-0"
+    },
+    {
+      "ID_INDICADOR": 9,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 09, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "9-1"
+    },
+    {
+      "ID_INDICADOR": 9,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 09, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "9-2"
+    },
+    {
+      "ID_INDICADOR": 9,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 09, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "9-3"
+    },
+    {
+      "ID_INDICADOR": 9,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 09, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "9-4"
+    },
+    {
+      "ID_INDICADOR": 9,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 09, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "9-5"
+    },
+    {
+      "ID_INDICADOR": 10,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 10, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "10-0"
+    },
+    {
+      "ID_INDICADOR": 10,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 10, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "10-1"
+    },
+    {
+      "ID_INDICADOR": 10,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 10, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "10-2"
+    },
+    {
+      "ID_INDICADOR": 10,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 10, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "10-3"
+    },
+    {
+      "ID_INDICADOR": 10,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 10, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "10-4"
+    },
+    {
+      "ID_INDICADOR": 10,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 10, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "10-5"
+    },
+    {
+      "ID_INDICADOR": 11,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 11, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "11-0"
+    },
+    {
+      "ID_INDICADOR": 11,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 11, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "11-1"
+    },
+    {
+      "ID_INDICADOR": 11,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 11, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "11-2"
+    },
+    {
+      "ID_INDICADOR": 11,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 11, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "11-3"
+    },
+    {
+      "ID_INDICADOR": 11,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 11, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "11-4"
+    },
+    {
+      "ID_INDICADOR": 11,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 11, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "11-5"
+    },
+    {
+      "ID_INDICADOR": 12,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 12, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "12-0"
+    },
+    {
+      "ID_INDICADOR": 12,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 12, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "12-1"
+    },
+    {
+      "ID_INDICADOR": 12,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 12, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "12-2"
+    },
+    {
+      "ID_INDICADOR": 12,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 12, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "12-3"
+    },
+    {
+      "ID_INDICADOR": 12,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 12, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "12-4"
+    },
+    {
+      "ID_INDICADOR": 12,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 12, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "12-5"
+    },
+    {
+      "ID_INDICADOR": 13,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 13, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "13-0"
+    },
+    {
+      "ID_INDICADOR": 13,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 13, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "13-1"
+    },
+    {
+      "ID_INDICADOR": 13,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 13, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "13-2"
+    },
+    {
+      "ID_INDICADOR": 13,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 13, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "13-3"
+    },
+    {
+      "ID_INDICADOR": 13,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 13, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "13-4"
+    },
+    {
+      "ID_INDICADOR": 13,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 13, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "13-5"
+    },
+    {
+      "ID_INDICADOR": 14,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 14, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "14-0"
+    },
+    {
+      "ID_INDICADOR": 14,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 14, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "14-1"
+    },
+    {
+      "ID_INDICADOR": 14,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 14, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "14-2"
+    },
+    {
+      "ID_INDICADOR": 14,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 14, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "14-3"
+    },
+    {
+      "ID_INDICADOR": 14,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 14, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "14-4"
+    },
+    {
+      "ID_INDICADOR": 14,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 14, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "14-5"
+    },
+    {
+      "ID_INDICADOR": 15,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 15, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "15-0"
+    },
+    {
+      "ID_INDICADOR": 15,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 15, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "15-1"
+    },
+    {
+      "ID_INDICADOR": 15,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 15, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "15-2"
+    },
+    {
+      "ID_INDICADOR": 15,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 15, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "15-3"
+    },
+    {
+      "ID_INDICADOR": 15,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 15, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "15-4"
+    },
+    {
+      "ID_INDICADOR": 15,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 15, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "15-5"
+    },
+    {
+      "ID_INDICADOR": 16,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 16, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "16-0"
+    },
+    {
+      "ID_INDICADOR": 16,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 16, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "16-1"
+    },
+    {
+      "ID_INDICADOR": 16,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 16, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "16-2"
+    },
+    {
+      "ID_INDICADOR": 16,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 16, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "16-3"
+    },
+    {
+      "ID_INDICADOR": 16,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 16, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "16-4"
+    },
+    {
+      "ID_INDICADOR": 16,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 16, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "16-5"
+    },
+    {
+      "ID_INDICADOR": 17,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 17, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "17-0"
+    },
+    {
+      "ID_INDICADOR": 17,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 17, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "17-1"
+    },
+    {
+      "ID_INDICADOR": 17,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 17, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "17-2"
+    },
+    {
+      "ID_INDICADOR": 17,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 17, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "17-3"
+    },
+    {
+      "ID_INDICADOR": 17,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 17, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "17-4"
+    },
+    {
+      "ID_INDICADOR": 17,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 17, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "17-5"
+    },
+    {
+      "ID_INDICADOR": 18,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 18, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "18-0"
+    },
+    {
+      "ID_INDICADOR": 18,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 18, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "18-1"
+    },
+    {
+      "ID_INDICADOR": 18,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 18, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "18-2"
+    },
+    {
+      "ID_INDICADOR": 18,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 18, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "18-3"
+    },
+    {
+      "ID_INDICADOR": 18,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 18, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "18-4"
+    },
+    {
+      "ID_INDICADOR": 18,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 18, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "18-5"
+    },
+    {
+      "ID_INDICADOR": 19,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 19, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "19-0"
+    },
+    {
+      "ID_INDICADOR": 19,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 19, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "19-1"
+    },
+    {
+      "ID_INDICADOR": 19,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 19, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "19-2"
+    },
+    {
+      "ID_INDICADOR": 19,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 19, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "19-3"
+    },
+    {
+      "ID_INDICADOR": 19,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 19, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "19-4"
+    },
+    {
+      "ID_INDICADOR": 19,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 19, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "19-5"
+    },
+    {
+      "ID_INDICADOR": 20,
+      "NOTA": 0,
+      "DESCRICAO": "Critério fictício 20, nível 0; uso exclusivo em testes.",
+      "ID_CRITERIO": "20-0"
+    },
+    {
+      "ID_INDICADOR": 20,
+      "NOTA": 1,
+      "DESCRICAO": "Critério fictício 20, nível 1; uso exclusivo em testes.",
+      "ID_CRITERIO": "20-1"
+    },
+    {
+      "ID_INDICADOR": 20,
+      "NOTA": 2,
+      "DESCRICAO": "Critério fictício 20, nível 2; uso exclusivo em testes.",
+      "ID_CRITERIO": "20-2"
+    },
+    {
+      "ID_INDICADOR": 20,
+      "NOTA": 3,
+      "DESCRICAO": "Critério fictício 20, nível 3; uso exclusivo em testes.",
+      "ID_CRITERIO": "20-3"
+    },
+    {
+      "ID_INDICADOR": 20,
+      "NOTA": 4,
+      "DESCRICAO": "Critério fictício 20, nível 4; uso exclusivo em testes.",
+      "ID_CRITERIO": "20-4"
+    },
+    {
+      "ID_INDICADOR": 20,
+      "NOTA": 5,
+      "DESCRICAO": "Critério fictício 20, nível 5; uso exclusivo em testes.",
+      "ID_CRITERIO": "20-5"
+    }
+  ],
+  "marcos": [
+    {
+      "ID": 1,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 2,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 3,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 4,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 5,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 6,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 7,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 8,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 9,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 10,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 11,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 12,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 13,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 14,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 15,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 16,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 17,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 18,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 19,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    },
+    {
+      "ID": 20,
+      "MARCO_REGULATORIO": "Referência fictícia; sem valor normativo."
+    }
+  ],
+  "ids_existentes": {},
+  "hospitais": [
+    {
+      "SIGLA": "DEMO_A",
+      "HOSPITAL": "Hospital Fictício Alfa"
+    },
+    {
+      "SIGLA": "DEMO_B",
+      "HOSPITAL": "Hospital Fictício Beta"
+    }
+  ]
+}
